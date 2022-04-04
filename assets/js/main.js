@@ -5,8 +5,26 @@ con difficoltà 2 => tra 1 e 81
 con difficoltà 3 => tra 1 e 49
 Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro. */
 
-/* .cell{
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-} */
+
+
+
+function generateGrid(numberCells, selector, elementName, className) {
+    const cellsElement = document.querySelector(selector)
+  for (let i = 1; i <= numberCells; i++) {
+    const cell = document.createElement(elementName)
+    cell.classList.add(className)
+    cellsElement.append(cell)
+  } 
+}
+
+let button = document.getElementById('difficoltà')
+
+function playMode(optionValue) {
+    if (optionValue === 'easy'){
+        generateGrid(100, '.row', '.cell', 'cell')
+    } if else (optionValue === 'normal'){
+        generateGrid(81, '.row', '.cell', 'cell')
+    } if else (optionValue === 'hard'){
+        generateGrid(49, '.row', '.cell', 'cell')
+    }
+}
