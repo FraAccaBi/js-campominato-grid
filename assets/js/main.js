@@ -17,7 +17,10 @@ function generateGrid(numberCells, selector, elementName, className) {
   } 
 }
 
-let button = document.getElementById('difficoltà')
+let button = document.getElementById('difficoltà');
+button.addEventListener('click', playMode(document.querySelector('option').value) {
+    
+}
 
 function playMode(optionValue) {
     if (optionValue === 'easy'){
