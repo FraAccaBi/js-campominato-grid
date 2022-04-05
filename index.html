@@ -13,30 +13,26 @@
             <img src="./img/logo_boolean.png" alt="">
             <h1 style="display: inline-block;">Campo Minato</h1>
         </div>
-        <div class="button">
+        <form action="" method="post">
             <label for="difficoltà">Difficoltà:</label>
-            <select id="difficoltà" name="opzioni" form="opzioni">
+            <select name="level" id="level">
+                <option value="default" disabled></option>
                 <option value="easy">Easy</option>
-                <option value="normal">Normal</option>
+                <option value="medium">Medium</option>
                 <option value="hard">Hard</option>
             </select>
-            <input type="submit" value="Play">
-        </div>
+            <button type="submit">Play</button>
+        </form>
     </header>
-    <div class="container">
-        <div class="row">
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
+
+    <main>
+        <div class="container">
+            <div class="cells">
+                
+            </div>
         </div>
-    </div>
+    </main>
+    
     <footer>
         <div>
             Made with &hearts; by <a href="">Boolean</a>

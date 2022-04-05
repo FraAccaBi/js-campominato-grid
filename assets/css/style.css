@@ -22,7 +22,7 @@ header{
 h1{
     margin-top: -5px;
 }
-.button{
+form{
     position: absolute;
     right: 80px;
     top: 20px;
@@ -31,17 +31,20 @@ h1{
     background-color: aquamarine;
     padding: 4rem;
 }
-
-.row{
-    width: 1000px;
-    margin: 1rem auto;
+.cells {
     display: flex;
     flex-wrap: wrap;
 }
 .cell{
-    width: 100px;
-    height: 100px;
     border: 1px solid black;
+    aspect-ratio: 1 / 1 ;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.cell.selected {
+    color:white;
+    background-color: cornflowerblue;
 }
 
 footer > div{
